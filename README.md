@@ -30,3 +30,11 @@ chown -R prometheus:prometheus /etc/prometheus
 7) Move the prometheus folder to the /usr/local/bin
 
 ![alt text](image-6.png)
+
+8) Configuration file exists in /etc/prometheus/prometheus.yml
+![alt text](image-7.png)
+
+9) create the prometheus systemd service file 
+vim /etc/systemd/system/prometheus.service
+
+![alt text](image-8.png)
