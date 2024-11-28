@@ -38,3 +38,25 @@ chown -R prometheus:prometheus /etc/prometheus
 vim /etc/systemd/system/prometheus.service
 
 ![alt text](image-8.png)
+
+10) # Reload systemd and start Prometheus
+sudo systemctl daemon-reload
+sudo systemctl start prometheus
+sudo systemctl enable prometheus
+
+11) Allow the port via firewall for the service 
+sudo ufw allow 9090/tcp
+
+![alt text](image-9.png)
+
+12)  Installing Grafana
+
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+sudo apt update
+sudo apt install -y grafana
+sudo systemctl start grafana-server
+sudo systemctl enable grafana-server
+
+13) Allow Grafana in firewall
+sudo ufw allow 3000/tcp
