@@ -6,3 +6,6 @@ Steps:
 1) Update the system to the lates 
 apt update -y
 ![alt text](image.png)
+
+2) Create system user and the Directory for prometheus
+![alt text](image-1.png)
