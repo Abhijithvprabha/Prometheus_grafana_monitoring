@@ -60,7 +60,11 @@ sudo systemctl enable grafana-server
 
 13) Allow Grafana in firewall
 sudo ufw allow 3000/tcp
-
+grafana webpage
 ![alt text](image-10.png)
 
+prometheus webpage
+
 ![alt text](image-11.png)
+
+completed
